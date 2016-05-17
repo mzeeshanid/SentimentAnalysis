@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A94EF2B7A11AE57718F5FBCC /* Pods_NLP_Assignment3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CDE46767C834946955B426 /* Pods_NLP_Assignment3UITests.framework */; };
+		B245275E1E1A86F7B6A1D8F4 /* Pods_NLP_Assignment3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B68135FEC3B5C3F887CF72 /* Pods_NLP_Assignment3.framework */; };
 		DAE517201CEB25EC007565EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5171F1CEB25EC007565EC /* AppDelegate.swift */; };
 		DAE517221CEB25EC007565EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE517211CEB25EC007565EC /* ViewController.swift */; };
 		DAE517251CEB25EC007565EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE517231CEB25EC007565EC /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		DAE5172A1CEB25EC007565EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE517281CEB25EC007565EC /* LaunchScreen.storyboard */; };
 		DAE517351CEB25EC007565EC /* NLP_Assignment3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE517341CEB25EC007565EC /* NLP_Assignment3Tests.swift */; };
 		DAE517401CEB25EC007565EC /* NLP_Assignment3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5173F1CEB25EC007565EC /* NLP_Assignment3UITests.swift */; };
+		DAE517511CEB2972007565EC /* labeledTrainData.tsv in Resources */ = {isa = PBXBuildFile; fileRef = DAE517501CEB2972007565EC /* labeledTrainData.tsv */; };
+		FA9598E57805D33241F0AC1A /* Pods_NLP_Assignment3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8148B08870CF649C265D8B37 /* Pods_NLP_Assignment3Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23CF70311320ABC92EEEDDDE /* Pods-NLP_Assignment3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLP_Assignment3Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NLP_Assignment3Tests/Pods-NLP_Assignment3Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		28EAA743AF8BBB1E30854173 /* Pods-NLP_Assignment3UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLP_Assignment3UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NLP_Assignment3UITests/Pods-NLP_Assignment3UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2902B6305ACBF41425D1545A /* Pods-NLP_Assignment3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLP_Assignment3.release.xcconfig"; path = "Pods/Target Support Files/Pods-NLP_Assignment3/Pods-NLP_Assignment3.release.xcconfig"; sourceTree = "<group>"; };
+		29B68135FEC3B5C3F887CF72 /* Pods_NLP_Assignment3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLP_Assignment3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE93E173CE6BF1589ADBAC1 /* Pods-NLP_Assignment3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLP_Assignment3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NLP_Assignment3/Pods-NLP_Assignment3.debug.xcconfig"; sourceTree = "<group>"; };
+		8148B08870CF649C265D8B37 /* Pods_NLP_Assignment3Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLP_Assignment3Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE00C695EBB04C5CC61B6244 /* Pods-NLP_Assignment3UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLP_Assignment3UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NLP_Assignment3UITests/Pods-NLP_Assignment3UITests.release.xcconfig"; sourceTree = "<group>"; };
+		D7573C11448D91D168F84C23 /* Pods-NLP_Assignment3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLP_Assignment3Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NLP_Assignment3Tests/Pods-NLP_Assignment3Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DAE5171C1CEB25EA007565EC /* NLP_Assignment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLP_Assignment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE5171F1CEB25EC007565EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE517211CEB25EC007565EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,9 @@
 		DAE5173B1CEB25EC007565EC /* NLP_Assignment3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NLP_Assignment3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE5173F1CEB25EC007565EC /* NLP_Assignment3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLP_Assignment3UITests.swift; sourceTree = "<group>"; };
 		DAE517411CEB25EC007565EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAE517501CEB2972007565EC /* labeledTrainData.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labeledTrainData.tsv; sourceTree = "<group>"; };
+		DAE517521CEB2D79007565EC /* NLP_Assignment3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NLP_Assignment3-Bridging-Header.h"; sourceTree = "<group>"; };
+		E2CDE46767C834946955B426 /* Pods_NLP_Assignment3UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLP_Assignment3UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B245275E1E1A86F7B6A1D8F4 /* Pods_NLP_Assignment3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9598E57805D33241F0AC1A /* Pods_NLP_Assignment3Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +85,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94EF2B7A11AE57718F5FBCC /* Pods_NLP_Assignment3UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D3F9A04409B2FB791FA99F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CE93E173CE6BF1589ADBAC1 /* Pods-NLP_Assignment3.debug.xcconfig */,
+				2902B6305ACBF41425D1545A /* Pods-NLP_Assignment3.release.xcconfig */,
+				23CF70311320ABC92EEEDDDE /* Pods-NLP_Assignment3Tests.debug.xcconfig */,
+				D7573C11448D91D168F84C23 /* Pods-NLP_Assignment3Tests.release.xcconfig */,
+				28EAA743AF8BBB1E30854173 /* Pods-NLP_Assignment3UITests.debug.xcconfig */,
+				AE00C695EBB04C5CC61B6244 /* Pods-NLP_Assignment3UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA6EDBC16B53DA99DC638F16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B68135FEC3B5C3F887CF72 /* Pods_NLP_Assignment3.framework */,
+				8148B08870CF649C265D8B37 /* Pods_NLP_Assignment3Tests.framework */,
+				E2CDE46767C834946955B426 /* Pods_NLP_Assignment3UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DAE517131CEB25EA007565EC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +122,8 @@
 				DAE517331CEB25EC007565EC /* NLP_Assignment3Tests */,
 				DAE5173E1CEB25EC007565EC /* NLP_Assignment3UITests */,
 				DAE5171D1CEB25EA007565EC /* Products */,
+				7D3F9A04409B2FB791FA99F7 /* Pods */,
+				DA6EDBC16B53DA99DC638F16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +146,8 @@
 				DAE517261CEB25EC007565EC /* Assets.xcassets */,
 				DAE517281CEB25EC007565EC /* LaunchScreen.storyboard */,
 				DAE5172B1CEB25EC007565EC /* Info.plist */,
+				DAE5174D1CEB2646007565EC /* TrainingDataSet */,
+				DAE517521CEB2D79007565EC /* NLP_Assignment3-Bridging-Header.h */,
 			);
 			path = NLP_Assignment3;
 			sourceTree = "<group>";
@@ -125,6 +170,14 @@
 			path = NLP_Assignment3UITests;
 			sourceTree = "<group>";
 		};
+		DAE5174D1CEB2646007565EC /* TrainingDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				DAE517501CEB2972007565EC /* labeledTrainData.tsv */,
+			);
+			name = TrainingDataSet;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAE517441CEB25EC007565EC /* Build configuration list for PBXNativeTarget "NLP_Assignment3" */;
 			buildPhases = (
+				CE2A317FF66887C7A7E79D46 /* 📦 Check Pods Manifest.lock */,
 				DAE517181CEB25EA007565EC /* Sources */,
 				DAE517191CEB25EA007565EC /* Frameworks */,
 				DAE5171A1CEB25EA007565EC /* Resources */,
+				4F7118CA748ECBD4562DE056 /* 📦 Embed Pods Frameworks */,
+				0F907AE21D0F7D36298C1B6C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAE517471CEB25EC007565EC /* Build configuration list for PBXNativeTarget "NLP_Assignment3Tests" */;
 			buildPhases = (
+				D7F7F047478A941E66751222 /* 📦 Check Pods Manifest.lock */,
 				DAE5172C1CEB25EC007565EC /* Sources */,
 				DAE5172D1CEB25EC007565EC /* Frameworks */,
 				DAE5172E1CEB25EC007565EC /* Resources */,
+				6D6C09C6DE8AB77195103D2A /* 📦 Embed Pods Frameworks */,
+				AFEF4FEDB9F6FF9FAE6B4ED6 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAE5174A1CEB25EC007565EC /* Build configuration list for PBXNativeTarget "NLP_Assignment3UITests" */;
 			buildPhases = (
+				9AF7FC6337BD51194353962A /* 📦 Check Pods Manifest.lock */,
 				DAE517371CEB25EC007565EC /* Sources */,
 				DAE517381CEB25EC007565EC /* Frameworks */,
 				DAE517391CEB25EC007565EC /* Resources */,
+				B31A3D986AC7AB65F63A34EF /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE517511CEB2972007565EC /* labeledTrainData.tsv in Resources */,
 				DAE5172A1CEB25EC007565EC /* LaunchScreen.storyboard in Resources */,
 				DAE517271CEB25EC007565EC /* Assets.xcassets in Resources */,
 				DAE517251CEB25EC007565EC /* Main.storyboard in Resources */,
@@ -250,6 +312,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F907AE21D0F7D36298C1B6C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NLP_Assignment3/Pods-NLP_Assignment3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F7118CA748ECBD4562DE056 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NLP_Assignment3/Pods-NLP_Assignment3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D6C09C6DE8AB77195103D2A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NLP_Assignment3Tests/Pods-NLP_Assignment3Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF7FC6337BD51194353962A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFEF4FEDB9F6FF9FAE6B4ED6 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NLP_Assignment3Tests/Pods-NLP_Assignment3Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B31A3D986AC7AB65F63A34EF /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NLP_Assignment3UITests/Pods-NLP_Assignment3UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE2A317FF66887C7A7E79D46 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F7F047478A941E66751222 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAE517181CEB25EA007565EC /* Sources */ = {
@@ -399,28 +584,36 @@
 		};
 		DAE517451CEB25EC007565EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE93E173CE6BF1589ADBAC1 /* Pods-NLP_Assignment3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NLP_Assignment3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thatclose.NLP-Assignment3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NLP_Assignment3/NLP_Assignment3-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		DAE517461CEB25EC007565EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2902B6305ACBF41425D1545A /* Pods-NLP_Assignment3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NLP_Assignment3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thatclose.NLP-Assignment3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NLP_Assignment3/NLP_Assignment3-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		DAE517481CEB25EC007565EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23CF70311320ABC92EEEDDDE /* Pods-NLP_Assignment3Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NLP_Assignment3Tests/Info.plist;
@@ -433,6 +626,7 @@
 		};
 		DAE517491CEB25EC007565EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7573C11448D91D168F84C23 /* Pods-NLP_Assignment3Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NLP_Assignment3Tests/Info.plist;
@@ -445,6 +639,7 @@
 		};
 		DAE5174B1CEB25EC007565EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28EAA743AF8BBB1E30854173 /* Pods-NLP_Assignment3UITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NLP_Assignment3UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +651,7 @@
 		};
 		DAE5174C1CEB25EC007565EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE00C695EBB04C5CC61B6244 /* Pods-NLP_Assignment3UITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NLP_Assignment3UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +680,7 @@
 				DAE517461CEB25EC007565EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAE517471CEB25EC007565EC /* Build configuration list for PBXNativeTarget "NLP_Assignment3Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +689,7 @@
 				DAE517491CEB25EC007565EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAE5174A1CEB25EC007565EC /* Build configuration list for PBXNativeTarget "NLP_Assignment3UITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +698,7 @@
 				DAE5174C1CEB25EC007565EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
