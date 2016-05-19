@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kGC-c3-TxB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NLP_Assignment3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,123 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMA-WL-FcM">
+                                <rect key="frame" x="200" y="90" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="TYX-xH-TXc"/>
+                                    <constraint firstAttribute="height" constant="44" id="yWY-Hq-nTz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Train"/>
+                                <connections>
+                                    <action selector="trainButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xhk-Vd-Ttb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eY3-tA-nFd">
+                                <rect key="frame" x="200" y="142" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6hG-FR-t6S"/>
+                                    <constraint firstAttribute="width" constant="200" id="SUe-hs-0nA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Predict"/>
+                                <connections>
+                                    <segue destination="ywX-Rp-RnP" kind="show" identifier="PredictSegue" id="1kT-nY-p9K"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eY3-tA-nFd" firstAttribute="top" secondItem="ZMA-WL-FcM" secondAttribute="bottom" constant="8" id="bKM-Rm-hOU"/>
+                            <constraint firstItem="ZMA-WL-FcM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h3a-aA-dqy"/>
+                            <constraint firstItem="ZMA-WL-FcM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="tKX-kg-zlB"/>
+                            <constraint firstItem="eY3-tA-nFd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wlT-Wn-os2"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ue9-Xo-tzo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1858" y="139"/>
+        </scene>
+        <!--Predict-->
+        <scene sceneID="Q3I-VU-MDi">
+            <objects>
+                <viewController storyboardIdentifier="PredictViewController" title="Predict" id="ywX-Rp-RnP" customClass="PredictViewController" customModule="NLP_Assignment3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rv2-Qj-Uhy"/>
+                        <viewControllerLayoutGuide type="bottom" id="1vb-x9-677"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XmH-SG-8kP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a review to predict" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O2d-eN-Xd8">
+                                <rect key="frame" x="20" y="90" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDidEndOnExit:" destination="ywX-Rp-RnP" eventType="editingDidEndOnExit" id="Kwp-16-DPu"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcV-EQ-Jq2">
+                                <rect key="frame" x="200" y="128" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="KNB-iq-p8Q"/>
+                                    <constraint firstAttribute="height" constant="44" id="bVm-Qu-a73"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Predict"/>
+                                <connections>
+                                    <action selector="predictButtonTapped:" destination="ywX-Rp-RnP" eventType="touchUpInside" id="Oo4-GP-y0G"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result: Unknown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrD-Xj-Bjm">
+                                <rect key="frame" x="20" y="180" width="560" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HcV-EQ-Jq2" firstAttribute="top" secondItem="O2d-eN-Xd8" secondAttribute="bottom" constant="8" id="4Dd-sO-hgN"/>
+                            <constraint firstAttribute="trailing" secondItem="lrD-Xj-Bjm" secondAttribute="trailing" constant="20" id="5UV-ks-NhR"/>
+                            <constraint firstAttribute="trailing" secondItem="O2d-eN-Xd8" secondAttribute="trailing" constant="20" id="MTz-Rc-e4a"/>
+                            <constraint firstItem="HcV-EQ-Jq2" firstAttribute="centerX" secondItem="XmH-SG-8kP" secondAttribute="centerX" id="SOg-xa-urx"/>
+                            <constraint firstItem="O2d-eN-Xd8" firstAttribute="leading" secondItem="XmH-SG-8kP" secondAttribute="leading" constant="20" id="fgX-oG-wlA"/>
+                            <constraint firstItem="lrD-Xj-Bjm" firstAttribute="leading" secondItem="XmH-SG-8kP" secondAttribute="leading" constant="20" id="qdB-Df-76G"/>
+                            <constraint firstItem="O2d-eN-Xd8" firstAttribute="top" secondItem="Rv2-Qj-Uhy" secondAttribute="bottom" constant="26" id="vqU-Xl-qbg"/>
+                            <constraint firstItem="lrD-Xj-Bjm" firstAttribute="top" secondItem="HcV-EQ-Jq2" secondAttribute="bottom" constant="8" id="yzD-9L-27n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="lrD-Xj-Bjm" id="OC5-he-3wy"/>
+                        <outlet property="textField" destination="O2d-eN-Xd8" id="kAE-dx-TLe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HUB-dD-njz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2574" y="147"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2je-a2-fI6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kGC-c3-TxB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gs8-mF-ICM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LlO-K1-nLL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pU-ZM-EwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="139"/>
         </scene>
     </scenes>
 </document>

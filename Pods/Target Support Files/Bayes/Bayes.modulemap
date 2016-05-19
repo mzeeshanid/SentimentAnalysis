@@ -1,0 +1,6 @@
+framework module Bayes {
+  umbrella header "Bayes-umbrella.h"
+
+  export *
+  module * { export * }
+}

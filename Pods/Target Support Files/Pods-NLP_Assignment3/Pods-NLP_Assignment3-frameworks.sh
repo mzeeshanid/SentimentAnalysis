@@ -84,8 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Bayes/Bayes.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CHCSVParser/CHCSVParser.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/KVNProgress/KVNProgress.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/YYModel/YYModel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Bayes/Bayes.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CHCSVParser/CHCSVParser.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/KVNProgress/KVNProgress.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/YYModel/YYModel.framework"
 fi

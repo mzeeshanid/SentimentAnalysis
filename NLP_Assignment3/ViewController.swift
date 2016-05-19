@@ -8,18 +8,42 @@
 
 import UIKit
 import CHCSVParser
+import KVNProgress
+import Bayes
 
 class ViewController: UIViewController {
 
+    var stopWords: Set<String>?
+    
+    var eventSpace = EventSpace<String, String>()
+    var postiveClassName = "positive"
+    var negativeClassName = "negative"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PredictSegue" {
+            let predictController = segue.destinationViewController as! PredictViewController
+            predictController.eventSpace = self.eventSpace
+            predictController.stopWords = self.stopWords
+        }
+    }
+    
+    @IBAction func trainButtonTapped(sender: UIButton) {
         
+        KVNProgress.showWithStatus("Parsing training data...")
         guard let fileURL = NSBundle.mainBundle().URLForResource("labeledTrainData", withExtension: "tsv") else {
             fatalError("Unable to locate csv file")
         }
         
-        var stopWords: Set<String>?
         do {
             let stopWordsPath = NSBundle.mainBundle().pathForResource("stopwords", ofType: "txt")
             let stopWordsContent = try String(contentsOfFile: stopWordsPath!)
@@ -37,34 +61,42 @@ class ViewController: UIViewController {
         do {
             let reviews = try NSArray.init(contentsOfDelimitedURL: fileURL, options: options, delimiter: delimiter, error: ())
             
-            var sanitizedReviews: Array<(id: Int, sentiment: Bool, review: String)> = Array()
+            
+            KVNProgress.showWithStatus("Sanitizing training data...");
+            
+//            var sanitizedReviews: Array<(id: Int, sentiment: Bool, review: String)> = Array()
             
             let countedSet: NSCountedSet = NSCountedSet()
             for (i, reviewDict) in reviews.enumerate() {
                 let review = reviewDict as! [String : AnyObject]
                 let sanitizedReview = (review["review"] as! String).sanitize(stopWords: stopWords!)
+                
+                let features = sanitizedReview.componentsSeparatedByString(" ")
+                let category = review["sentiment"]!.boolValue == true ? postiveClassName : negativeClassName
+                eventSpace.observe(category, features: features)
+                
+                if (i+1)%500 == 0 {
+                    KVNProgress.showWithStatus("Trained \(i+1, reviews.count, "reviews outof ", countedSet.allObjects.count)");
+                }
+                
+                /*
                 sanitizedReviews.append((review["id"]!.integerValue, review["sentiment"]!.boolValue, sanitizedReview))
                 
                 let range = sanitizedReview.startIndex..<sanitizedReview.endIndex
                 sanitizedReview.enumerateSubstringsInRange(range, options: .ByWords, { (substring, substringRange, enclosingRange, inout stop: Bool) in
                     countedSet.addObject(substring!)
                 })
-                
-                if (i+1)%1000 == 0 {
-                    debugPrint("Review %d of: \(i+1, reviews.count, countedSet.allObjects.count)")
-                }
+                */
             }
+            KVNProgress.dismiss()
+            KVNProgress.showSuccessWithStatus("Training completed")
             
-            debugPrint("first diction: \(sanitizedReviews.first!, sanitizedReviews.count)")
+//            debugPrint("first diction: \(sanitizedReviews.first!, sanitizedReviews.count)")
         } catch let error as NSError {
             debugPrint("error while parsing csv file: " + error.localizedDescription)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 }
 
 extension String {
@@ -81,18 +113,14 @@ extension String {
         var tokens: [String] = []
         string.enumerateSubstringsInRange(range, options: .ByWords, { (substring, substringRange, enclosingRange, inout stop: Bool) in
             
-            let linguisticRange = substring!.startIndex..<substring!.endIndex
-            let languageMap: [String : [String]] = ["Latn" : ["en"]]
-            let orthography = NSOrthography.init(dominantScript: "Latn", languageMap: languageMap)
-            substring?.enumerateLinguisticTagsInRange(linguisticRange, scheme: NSLinguisticTagSchemeLemma, options: NSLinguisticTaggerOptions.OmitWhitespace, orthography: orthography, { (tag: String, tokenRange: Range<Index>?, sentenceRange: Range<Index>?, inout stop: Bool) in
-                
-                if let tokenRange = tokenRange {
-                    debugPrint("tag: \(tag, tokenRange)")
-                }
-            })
-            
             if stopWords.indexOf(substring!) == nil {
-                tokens.append(substring!)
+                (substring! as NSString).getTagForWordWithCompletion({ (tag: String?, currentEntity: String?, tokenRange: NSRange, sentenceRange: NSRange) in
+                    if let tag = tag {
+                        tokens.append(tag)
+                    } else {
+                        tokens.append(substring!)
+                    }
+                })
             }
         })
         

@@ -7,24 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A495056E4EF36A511AEC04F7C907AD1 /* Pods-NLP_Assignment3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CDA404553D07791238CF8DFD3ED00 /* Pods-NLP_Assignment3-dummy.m */; };
-		1E559B969B694D67D73DB05A19AAC3A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		00E7BB598621C40EF68773FC8E7A4937 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB74ADA13BD2FB81B3E3233F4417F8C /* GLKit.framework */; };
+		02AB1316D90DB4941FDD5C0E8A11E5E2 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BD458E5DBC726FC531A2FF96ADE5C43D /* YYClassInfo.m */; };
+		047082ACB13CA8B7A1ECE9C771BC3975 /* IncrementingBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78152EEB1D5ED867CC9729BA845737C3 /* IncrementingBag.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		066AEF6A1B987399C90F7B3AF53579F5 /* KVNProgressConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 453F64428B78F11DE475E98B5AAB0B06 /* KVNProgressConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09A72EE862E538AB6939FA043A26F416 /* Pods-NLP_Assignment3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F39CDA404553D07791238CF8DFD3ED00 /* Pods-NLP_Assignment3-dummy.m */; };
+		0EE9D85E3C609CF07EE82AD2AAC58BAD /* KVNProgressConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C66CD0A30CDDFD4823689942CF4F1 /* KVNProgressConfiguration.m */; };
+		116D3767A78FC0657E88B4CEDA4C3299 /* UIImage+KVNEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC527832E0E32B249A99080CB8064D1 /* UIImage+KVNEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12190DEBF0C49D6CFFEAE13DC8C67B63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81DDA22C219571FAEBD00FE9004D670 /* Foundation.framework */; };
+		15760B6B45914AE37B7557626301020E /* YYModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D86D7CC56111BC0B638BAC2516EE0C3B /* YYModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E559B969B694D67D73DB05A19AAC3A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81DDA22C219571FAEBD00FE9004D670 /* Foundation.framework */; };
+		1F760552DFD341D1B4613C06A7F0B44A /* Bayes.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EBA63B978175E76A1CDB887FE8FA0D /* Bayes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		241D1B117A56F074E62C3CD50D956865 /* BayesianClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71597C10476AEECBC5520010E7F5B47 /* BayesianClassifier.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		258082E7F88B3E8269CDFC19E3D46196 /* Pods-NLP_Assignment3Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCE115C50B303E8794C750D5CCD0F82C /* Pods-NLP_Assignment3Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2995EEDBF01D8105276C7EC9E08E4B9F /* Pods-NLP_Assignment3UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BD13E29C536CC920B2F924509A4816B /* Pods-NLP_Assignment3UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		332A7FD8ECAFE57CF67506E9A5740E4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		3913C12694A7500A9020A1CACAA4C3C0 /* CHCSVParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AD82ADA99E77044E160B809102905E /* CHCSVParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5528BFB50ECAE3375AFE7E6FB2419BB2 /* CHCSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F3DB427E437EAFB74B5DDAE17FCCD2E8 /* CHCSVParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		332A7FD8ECAFE57CF67506E9A5740E4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81DDA22C219571FAEBD00FE9004D670 /* Foundation.framework */; };
+		3913C12694A7500A9020A1CACAA4C3C0 /* CHCSVParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C46715D20DD44F38EED893680B4CA3D /* CHCSVParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43F5D9BC588DE1E56AD0FB89AF377336 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A906F09E624CD18A74809B8FB429F361 /* CoreFoundation.framework */; };
+		51E61398CA978FD6B2AE9A6CC96A851A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81DDA22C219571FAEBD00FE9004D670 /* Foundation.framework */; };
+		5528BFB50ECAE3375AFE7E6FB2419BB2 /* CHCSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A3619438C7FA7B2F303B67FB918E8F7 /* CHCSVParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		631BC2D630A78B593FCDE9DD1D0B6A46 /* Bayes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 337B5C97CFE236B8FB9913951D5A4079 /* Bayes-dummy.m */; };
 		6D71171C1F0CF88EA5BF841284E20CD6 /* Pods-NLP_Assignment3UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FE74B10551D9BEACDE106AEC162008 /* Pods-NLP_Assignment3UITests-dummy.m */; };
-		8D56AC84EF4AE87BA1B7FE3FA2ECE27B /* CHCSVParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D3D763DAFD0A836B7D491304E3224E /* CHCSVParser-dummy.m */; };
-		9005EF7100D43C935D41ACA2D982A739 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB5D7AF371D8F20F37CC6A1EFAFE9C9 /* CHCSVParser.m */; };
-		9C7E82F0A62F49255CC3592F6FA3F775 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		B1F103D1BCF5BA09FCCB09E791F3CECE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		706DD00E534236F25B5E1368B594BCC3 /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE19E88E657E9CAE650A8F9067EBB80 /* UIImage+KVNEmpty.m */; };
+		82E64159AFF200F6024944614B5E168C /* KVNProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F777FA56386F8194FFABEFEAEAD8F2F /* KVNProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84D644530C86CA126CE50194AC5DBE08 /* HashableTouple.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE291EF7D41A13FD6B2E71A7FFD3D5E9 /* HashableTouple.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8D56AC84EF4AE87BA1B7FE3FA2ECE27B /* CHCSVParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6182646467E0212E707C38B34993657 /* CHCSVParser-dummy.m */; };
+		9005EF7100D43C935D41ACA2D982A739 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E453928E80DE35C2E6515790FF1861E2 /* CHCSVParser.m */; };
+		913D86CE2761D267DA89A5BF503D0C57 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E622410586A03724F7F8A8DCB4C11567 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92999B44DA65C91562E9FD6C787698FE /* Pods-NLP_Assignment3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA1C5DDEF27C7DFB4126CA01A89654D /* Pods-NLP_Assignment3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C2A80372A56186C35002DE726661C4B /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B11906BC3D6BABF774F40EEC5E4E6 /* YYModel-dummy.m */; };
+		A883ED11AF49DA9CF33748A18A461EA7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8114E3DF87B2B75F2E0736FCA314F853 /* QuartzCore.framework */; };
+		ABF2B055A55B65795E721D4A77BB8D01 /* KVNProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 690A8AF9E3CECCB8B3F3F7610C39532A /* KVNProgress-dummy.m */; };
+		B0A973C6184C25929F3C56F78BC651E4 /* UIColor+KVNContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3D6D468327A44DA64BD68A058AADF3 /* UIColor+KVNContrast.m */; };
+		B1F103D1BCF5BA09FCCB09E791F3CECE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81DDA22C219571FAEBD00FE9004D670 /* Foundation.framework */; };
+		B477BDCD9B1D06725C07B4448903D7F3 /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 485C947ADF3C18B362176D554E2E86A5 /* UIImage+KVNImageEffects.m */; };
+		B4D2F151FF2C49434ACD896664088769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81DDA22C219571FAEBD00FE9004D670 /* Foundation.framework */; };
+		B5F53FA074E62467B81549FC8C12FADB /* EventSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311BF5596ED0E9E0EF865C5CE895658 /* EventSpace.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B7AFD9C143865892B89249A5C69CD5B3 /* UIImage+KVNImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 58AE687B6E02B0486291D745FD9A40F5 /* UIImage+KVNImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8AEAF6649AD52F10D31C5F1658E1B2C /* Pods-NLP_Assignment3Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11117D83E13E9A9C9EE9682F900A2E1B /* Pods-NLP_Assignment3Tests-dummy.m */; };
-		D4A8D734167C301DB055307B8887263D /* Pods-NLP_Assignment3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA1C5DDEF27C7DFB4126CA01A89654D /* Pods-NLP_Assignment3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD18BDED1CC9AD4AA4050786288C8D8C /* KVNProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = A68564A2181A71A536342717C306A91A /* KVNProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE93DE48285505A70FDD99DA7797CC6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81DDA22C219571FAEBD00FE9004D670 /* Foundation.framework */; };
+		C88C09CA12A6481AD44B3331732B0035 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE2E9720EFA970A317BA009D75417C /* NSObject+YYModel.m */; };
+		CE81C87BE66A0443B20EDA83A66BB3D4 /* UIColor+KVNContrast.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF26AD3146A4687DFC545CCF6ED06FB /* UIColor+KVNContrast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4E977BCE4ED1AF24E7E122FC462E42B /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC28FBA472BB5F7E847D3F72578691A /* KVNProgress.m */; };
+		DADFF878CB7140130210C8DB8197E291 /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E994E46EE1617B393320DB78822BB8 /* KVNProgressView.xib */; };
+		E179B8F9D5A1FC8C5FCAEDC35993E5B9 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 128506D7DAF49A6DBACAF2CB915D2D14 /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E39BEFDD19BB41824CE29C0B4A945A1F /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AC12B8424DEEDD9A3B3ED093D77BE3A6 /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E91A99ECA622378E45E1396FC4DCF866 /* Bayes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8353740C7F065DDC42F35AD3C17540 /* Bayes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD430156D82DEA5E06E2B3852C66BEBA /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F3B3EFE50C2DFFC35C02504F99F50 /* Math.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F39A7304149B30D29E5A10FA2CE004A6 /* PBXContainerItemProxy */ = {
+		71E7FAEB9732239400E510BC99ACA86E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0186EE20AB4D310515B8041966DB7AEB;
+			remoteInfo = KVNProgress;
+		};
+		7FB093C9BDD3AE526EF7BDF9F560EC41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD5EBA10AB80EF44C24F9178506A1F2C;
+			remoteInfo = Bayes;
+		};
+		9B2652DA5EFB8E1B03E73146DA923C83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70145D389C2EFCB86F87E070018CBA28;
+			remoteInfo = YYModel;
+		};
+		A1FD32382EBB043CA642D367F0951DF9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -34,49 +89,95 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A117C869B5DFF22EB5ACFEADA383297 /* Pods_NLP_Assignment3UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLP_Assignment3UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4C66CD0A30CDDFD4823689942CF4F1 /* KVNProgressConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgressConfiguration.m; path = KVNProgress/Classes/KVNProgressConfiguration.m; sourceTree = "<group>"; };
+		0B1B997D56AF2E38B5C167157771E0FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C46715D20DD44F38EED893680B4CA3D /* CHCSVParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHCSVParser-umbrella.h"; sourceTree = "<group>"; };
 		0DFF5EA3AF4F3CDE44604D3A9759D4CD /* Pods-NLP_Assignment3Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NLP_Assignment3Tests-resources.sh"; sourceTree = "<group>"; };
+		0EC28FBA472BB5F7E847D3F72578691A /* KVNProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgress.m; path = KVNProgress/Classes/KVNProgress.m; sourceTree = "<group>"; };
 		11117D83E13E9A9C9EE9682F900A2E1B /* Pods-NLP_Assignment3Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NLP_Assignment3Tests-dummy.m"; sourceTree = "<group>"; };
-		142A65A48F15A2286610A282A17A5CBF /* CHCSVParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHCSVParser-prefix.pch"; sourceTree = "<group>"; };
+		12762BFA52C3EB823A5B47B3DB050EA4 /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		128506D7DAF49A6DBACAF2CB915D2D14 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
+		14B647C4376A17161B8AF82521927DB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E994E46EE1617B393320DB78822BB8 /* KVNProgressView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KVNProgressView.xib; path = KVNProgress/Resources/KVNProgressView.xib; sourceTree = "<group>"; };
 		1B8FB04E0791D51020654920B0BDE25C /* Pods-NLP_Assignment3UITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NLP_Assignment3UITests-resources.sh"; sourceTree = "<group>"; };
-		1F3E2C0603465E6BB4271F012DAC5C58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213F3B3EFE50C2DFFC35C02504F99F50 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Math.swift; path = Bayes/Math.swift; sourceTree = "<group>"; };
+		21C51E6E322ED79C98A1CC57DC052FEC /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
+		2F028E7DE08E649D9F934C9B4DA9C7FE /* CHCSVParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CHCSVParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337B5C97CFE236B8FB9913951D5A4079 /* Bayes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bayes-dummy.m"; sourceTree = "<group>"; };
 		35FE74B10551D9BEACDE106AEC162008 /* Pods-NLP_Assignment3UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NLP_Assignment3UITests-dummy.m"; sourceTree = "<group>"; };
+		370B11906BC3D6BABF774F40EEC5E4E6 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
+		3A3619438C7FA7B2F303B67FB918E8F7 /* CHCSVParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CHCSVParser.h; path = CHCSVParser/CHCSVParser/CHCSVParser.h; sourceTree = "<group>"; };
 		3BD13E29C536CC920B2F924509A4816B /* Pods-NLP_Assignment3UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NLP_Assignment3UITests-umbrella.h"; sourceTree = "<group>"; };
 		3C2D70DBA6105159B44B8E27727E419C /* Pods-NLP_Assignment3-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NLP_Assignment3-acknowledgements.plist"; sourceTree = "<group>"; };
 		4163F6C0D0B7C562668546F7601BE4A8 /* Pods-NLP_Assignment3UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NLP_Assignment3UITests.modulemap"; sourceTree = "<group>"; };
+		453F64428B78F11DE475E98B5AAB0B06 /* KVNProgressConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgressConfiguration.h; path = KVNProgress/Classes/KVNProgressConfiguration.h; sourceTree = "<group>"; };
+		485C947ADF3C18B362176D554E2E86A5 /* UIImage+KVNImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNImageEffects.m"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.m"; sourceTree = "<group>"; };
+		48A4CF7A8C1AE5174B077425D107ECF3 /* CHCSVParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CHCSVParser.modulemap; sourceTree = "<group>"; };
+		49D72EBF2C0CB9D13DD08DD83431FDB1 /* CHCSVParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHCSVParser-prefix.pch"; sourceTree = "<group>"; };
 		4CAD06F1BF57FA7F8C8A79121336CA25 /* Pods-NLP_Assignment3Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NLP_Assignment3Tests-frameworks.sh"; sourceTree = "<group>"; };
+		4F777FA56386F8194FFABEFEAEAD8F2F /* KVNProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVNProgress-umbrella.h"; sourceTree = "<group>"; };
 		5324342C0B5D43897A7E0FD5B9C33B0D /* Pods-NLP_Assignment3UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NLP_Assignment3UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		58AE687B6E02B0486291D745FD9A40F5 /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNImageEffects.h"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
+		58EBA63B978175E76A1CDB887FE8FA0D /* Bayes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bayes.h; path = Bayes/Bayes.h; sourceTree = "<group>"; };
 		5D84F6820A1BBF12D34663D7F5BDCD8A /* Pods-NLP_Assignment3-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NLP_Assignment3-resources.sh"; sourceTree = "<group>"; };
 		5F21CFDF5F7AC957397570B7E673F190 /* Pods-NLP_Assignment3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NLP_Assignment3.release.xcconfig"; sourceTree = "<group>"; };
-		5FB5D7AF371D8F20F37CC6A1EFAFE9C9 /* CHCSVParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CHCSVParser.m; path = CHCSVParser/CHCSVParser/CHCSVParser.m; sourceTree = "<group>"; };
+		61D71DFDE88840F171F2472F19249568 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		647E6F0454F84FA01F5DEB329371938F /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YYModel.modulemap; sourceTree = "<group>"; };
+		676F4B7AE3E2E99DA62976D5EF6F783C /* Bayes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bayes-prefix.pch"; sourceTree = "<group>"; };
+		690A8AF9E3CECCB8B3F3F7610C39532A /* KVNProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVNProgress-dummy.m"; sourceTree = "<group>"; };
 		6D8817B3E0F4CB5034A7B785117981C3 /* Pods-NLP_Assignment3-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NLP_Assignment3-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7311BF5596ED0E9E0EF865C5CE895658 /* EventSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventSpace.swift; path = Bayes/EventSpace.swift; sourceTree = "<group>"; };
 		74D53FCB46E849868654552D0018EA1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C03D9A2A156A65B134B478EA187076 /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		78152EEB1D5ED867CC9729BA845737C3 /* IncrementingBag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IncrementingBag.swift; path = Bayes/IncrementingBag.swift; sourceTree = "<group>"; };
+		8114E3DF87B2B75F2E0736FCA314F853 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		8778CB238DE602BFEC6AC855D2F61491 /* Pods-NLP_Assignment3-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NLP_Assignment3-frameworks.sh"; sourceTree = "<group>"; };
-		87F574CCBCAFFBD62D13BE3C7E8C45F7 /* CHCSVParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CHCSVParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A7023E546867F1E1D676EFDD7DC7336 /* Bayes.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bayes.xcconfig; sourceTree = "<group>"; };
+		8AE19E88E657E9CAE650A8F9067EBB80 /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNEmpty.m"; path = "KVNProgress/Categories/UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
 		8E2EAF1C916B07AEDF8D78860348D1DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FCE2E9720EFA970A317BA009D75417C /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
+		8FCF74EA000D0B985C17F4CCC136E173 /* CHCSVParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHCSVParser.xcconfig; sourceTree = "<group>"; };
+		937703DD7C96C70D4C513D51DBC7B383 /* Pods_NLP_Assignment3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLP_Assignment3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95FF0414E62C1A85FF0E42620EB0D240 /* Pods_NLP_Assignment3Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLP_Assignment3Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		943F0046ADA26929CFFAC9B1434A10D0 /* Pods_NLP_Assignment3UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLP_Assignment3UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B3EC82F00552C9ED2AA00B3A4862C9 /* KVNProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KVNProgress.modulemap; sourceTree = "<group>"; };
 		9BC04961226EB44146B4E08DE40B7EB2 /* Pods-NLP_Assignment3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NLP_Assignment3.modulemap"; sourceTree = "<group>"; };
 		9DA1C5DDEF27C7DFB4126CA01A89654D /* Pods-NLP_Assignment3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NLP_Assignment3-umbrella.h"; sourceTree = "<group>"; };
 		A4790E94B39A8C065C4B5A9BAFCF76F2 /* Pods-NLP_Assignment3UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NLP_Assignment3UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A68564A2181A71A536342717C306A91A /* KVNProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgress.h; path = KVNProgress/Classes/KVNProgress.h; sourceTree = "<group>"; };
 		A8C7BE1E69C743715CA39019FFA96B92 /* Pods-NLP_Assignment3UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NLP_Assignment3UITests-frameworks.sh"; sourceTree = "<group>"; };
+		A906F09E624CD18A74809B8FB429F361 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		A97FCD7EB5ED3D8A5E72AB9CF3158690 /* Pods-NLP_Assignment3Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NLP_Assignment3Tests.modulemap"; sourceTree = "<group>"; };
+		A989F7E465232041FE0060E4DEBD62DA /* KVNProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVNProgress-prefix.pch"; sourceTree = "<group>"; };
+		AC12B8424DEEDD9A3B3ED093D77BE3A6 /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
+		AC8353740C7F065DDC42F35AD3C17540 /* Bayes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bayes-umbrella.h"; sourceTree = "<group>"; };
 		B488C4EDA7A660DC6A8E35C08E6B224D /* Pods-NLP_Assignment3UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NLP_Assignment3UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B65A523EE5509D630A50A9C9291B0E05 /* Bayes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bayes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B680D8ADD7D75112A07ABF293323B30D /* Bayes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Bayes.modulemap; sourceTree = "<group>"; };
+		BCC527832E0E32B249A99080CB8064D1 /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNEmpty.h"; path = "KVNProgress/Categories/UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
 		BCE115C50B303E8794C750D5CCD0F82C /* Pods-NLP_Assignment3Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NLP_Assignment3Tests-umbrella.h"; sourceTree = "<group>"; };
+		BD3D6D468327A44DA64BD68A058AADF3 /* UIColor+KVNContrast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+KVNContrast.m"; path = "KVNProgress/Categories/UIColor+KVNContrast.m"; sourceTree = "<group>"; };
+		BD458E5DBC726FC531A2FF96ADE5C43D /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		BE291EF7D41A13FD6B2E71A7FFD3D5E9 /* HashableTouple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashableTouple.swift; path = Bayes/HashableTouple.swift; sourceTree = "<group>"; };
 		BF75FE609D6E0CD830C39A6067E90875 /* Pods-NLP_Assignment3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NLP_Assignment3.debug.xcconfig"; sourceTree = "<group>"; };
+		BFF26AD3146A4687DFC545CCF6ED06FB /* UIColor+KVNContrast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+KVNContrast.h"; path = "KVNProgress/Categories/UIColor+KVNContrast.h"; sourceTree = "<group>"; };
+		C0594B67D30AE5E3314F2CCD5009B405 /* KVNProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVNProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C369CF9898A0C4314E47421DBAAE92B8 /* Pods_NLP_Assignment3Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLP_Assignment3Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C706ACCB6A15DD9E25B9D650866CA378 /* KVNProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVNProgress.xcconfig; sourceTree = "<group>"; };
+		C71597C10476AEECBC5520010E7F5B47 /* BayesianClassifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BayesianClassifier.swift; path = Bayes/BayesianClassifier.swift; sourceTree = "<group>"; };
+		C81DDA22C219571FAEBD00FE9004D670 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CB742287CA1929E5A045C0BAE6382622 /* Pods-NLP_Assignment3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NLP_Assignment3Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CCE83D255983671C15F7E51D08CB74D1 /* Pods-NLP_Assignment3Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NLP_Assignment3Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CE9491949551F233B5BD127F974D90E6 /* Pods-NLP_Assignment3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NLP_Assignment3Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D0AD82ADA99E77044E160B809102905E /* CHCSVParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHCSVParser-umbrella.h"; sourceTree = "<group>"; };
-		D9CF27226CBB24FF8AE294C6B4D65ABB /* CHCSVParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CHCSVParser.modulemap; sourceTree = "<group>"; };
-		DC7BAFDF1A1724C5C5A526659ECBF0E6 /* Pods_NLP_Assignment3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLP_Assignment3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD40FDFD0B9818959CAE95ACE0C41379 /* CHCSVParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHCSVParser.xcconfig; sourceTree = "<group>"; };
+		D6182646467E0212E707C38B34993657 /* CHCSVParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHCSVParser-dummy.m"; sourceTree = "<group>"; };
+		D86D7CC56111BC0B638BAC2516EE0C3B /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
 		E15913B3C3AA3D9C866CE88C19497AC2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8D3D763DAFD0A836B7D491304E3224E /* CHCSVParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHCSVParser-dummy.m"; sourceTree = "<group>"; };
+		E3C2B36FD728C09C2168ABB097159CEF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E453928E80DE35C2E6515790FF1861E2 /* CHCSVParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CHCSVParser.m; path = CHCSVParser/CHCSVParser/CHCSVParser.m; sourceTree = "<group>"; };
+		E622410586A03724F7F8A8DCB4C11567 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
 		E90BF1159E57C942941B1DD0C993F8F7 /* Pods-NLP_Assignment3UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NLP_Assignment3UITests.release.xcconfig"; sourceTree = "<group>"; };
+		EEB74ADA13BD2FB81B3E3233F4417F8C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
 		F39CDA404553D07791238CF8DFD3ED00 /* Pods-NLP_Assignment3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NLP_Assignment3-dummy.m"; sourceTree = "<group>"; };
-		F3DB427E437EAFB74B5DDAE17FCCD2E8 /* CHCSVParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CHCSVParser.h; path = CHCSVParser/CHCSVParser/CHCSVParser.h; sourceTree = "<group>"; };
 		FDC712AF2ABC7B897E5B5148CD76E14D /* Pods-NLP_Assignment3Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NLP_Assignment3Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,11 +198,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2636A7C89C97C718BA209C7DF3954400 /* Frameworks */ = {
+		8389364F1F6E147C0B5B7C615D8C2126 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C7E82F0A62F49255CC3592F6FA3F775 /* Foundation.framework in Frameworks */,
+				43F5D9BC588DE1E56AD0FB89AF377336 /* CoreFoundation.framework in Frameworks */,
+				BE93DE48285505A70FDD99DA7797CC6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB49D3118A5ADB723BD43594A596A905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12190DEBF0C49D6CFFEAE13DC8C67B63 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C426DE9E2C1305B5C8B8554234E0557E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E61398CA978FD6B2AE9A6CC96A851A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,21 +231,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA0D097C530FB413E08EAE35FB17EB7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D2F151FF2C49434ACD896664088769 /* Foundation.framework in Frameworks */,
+				00E7BB598621C40EF68773FC8E7A4937 /* GLKit.framework in Frameworks */,
+				A883ED11AF49DA9CF33748A18A461EA7 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14E0FCC8C5712BD673446F1DECBC2469 /* Support Files */ = {
+		0D6DD8CDD404A3503EB20D3D47114DE8 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D9CF27226CBB24FF8AE294C6B4D65ABB /* CHCSVParser.modulemap */,
-				DD40FDFD0B9818959CAE95ACE0C41379 /* CHCSVParser.xcconfig */,
-				E8D3D763DAFD0A836B7D491304E3224E /* CHCSVParser-dummy.m */,
-				142A65A48F15A2286610A282A17A5CBF /* CHCSVParser-prefix.pch */,
-				D0AD82ADA99E77044E160B809102905E /* CHCSVParser-umbrella.h */,
-				1F3E2C0603465E6BB4271F012DAC5C58 /* Info.plist */,
+				A906F09E624CD18A74809B8FB429F361 /* CoreFoundation.framework */,
+				C81DDA22C219571FAEBD00FE9004D670 /* Foundation.framework */,
+				EEB74ADA13BD2FB81B3E3233F4417F8C /* GLKit.framework */,
+				8114E3DF87B2B75F2E0736FCA314F853 /* QuartzCore.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CHCSVParser";
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1366672D192DA6752A6D10CD3821DA3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15E994E46EE1617B393320DB78822BB8 /* KVNProgressView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D6DD8CDD404A3503EB20D3D47114DE8 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		208BB129E780D83773C1CBB0D803560F /* Pods-NLP_Assignment3Tests */ = {
@@ -148,6 +289,16 @@
 			path = "Target Support Files/Pods-NLP_Assignment3Tests";
 			sourceTree = "<group>";
 		};
+		23091974C92A253B02E8273B6F9744BE /* CHCSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				3A3619438C7FA7B2F303B67FB918E8F7 /* CHCSVParser.h */,
+				E453928E80DE35C2E6515790FF1861E2 /* CHCSVParser.m */,
+				5104753470BB1AC1E4AFDE3BE2D14AD2 /* Support Files */,
+			);
+			path = CHCSVParser;
+			sourceTree = "<group>";
+		};
 		2AAAA76D115A10BDA86684366F4FF2D8 /* Pods-NLP_Assignment3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,29 +317,51 @@
 			path = "Target Support Files/Pods-NLP_Assignment3";
 			sourceTree = "<group>";
 		};
-		3423D63DD97844C6BCFB0F1D757FCA5C /* Pods */ = {
+		465087922CCA7EE940A06CC528A329CE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A068383F7716DDC731166B6E13249A64 /* CHCSVParser */,
+				C7624EDA355B6EBBDF75552A48EEE81C /* Bayes */,
+				23091974C92A253B02E8273B6F9744BE /* CHCSVParser */,
+				A0CB581122E9849E5A08EFEDAD1BD1AA /* KVNProgress */,
+				55AE2A9643933BD015A55849E9C9D456 /* YYModel */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		5104753470BB1AC1E4AFDE3BE2D14AD2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				48A4CF7A8C1AE5174B077425D107ECF3 /* CHCSVParser.modulemap */,
+				8FCF74EA000D0B985C17F4CCC136E173 /* CHCSVParser.xcconfig */,
+				D6182646467E0212E707C38B34993657 /* CHCSVParser-dummy.m */,
+				49D72EBF2C0CB9D13DD08DD83431FDB1 /* CHCSVParser-prefix.pch */,
+				0C46715D20DD44F38EED893680B4CA3D /* CHCSVParser-umbrella.h */,
+				0B1B997D56AF2E38B5C167157771E0FD /* Info.plist */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/CHCSVParser";
+			sourceTree = "<group>";
+		};
+		55AE2A9643933BD015A55849E9C9D456 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC12B8424DEEDD9A3B3ED093D77BE3A6 /* NSObject+YYModel.h */,
+				8FCE2E9720EFA970A317BA009D75417C /* NSObject+YYModel.m */,
+				E622410586A03724F7F8A8DCB4C11567 /* YYClassInfo.h */,
+				BD458E5DBC726FC531A2FF96ADE5C43D /* YYClassInfo.m */,
+				128506D7DAF49A6DBACAF2CB915D2D14 /* YYModel.h */,
+				F82CBC6D939BC2D413A3B6A953B400B1 /* Support Files */,
+			);
+			path = YYModel;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3423D63DD97844C6BCFB0F1D757FCA5C /* Pods */,
-				A028CB911AC490CF72DDB7AB8419B2CC /* Products */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				465087922CCA7EE940A06CC528A329CE /* Pods */,
+				EEF40A01257478F3113304F01E7E2B3B /* Products */,
 				C8E59B0E4767370E98DBD3BC88F92A07 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -211,33 +384,51 @@
 			path = "Target Support Files/Pods-NLP_Assignment3UITests";
 			sourceTree = "<group>";
 		};
-		A028CB911AC490CF72DDB7AB8419B2CC /* Products */ = {
+		9854DD239CB26FD4504EB944B130739F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				87F574CCBCAFFBD62D13BE3C7E8C45F7 /* CHCSVParser.framework */,
-				DC7BAFDF1A1724C5C5A526659ECBF0E6 /* Pods_NLP_Assignment3.framework */,
-				95FF0414E62C1A85FF0E42620EB0D240 /* Pods_NLP_Assignment3Tests.framework */,
-				0A117C869B5DFF22EB5ACFEADA383297 /* Pods_NLP_Assignment3UITests.framework */,
+				B680D8ADD7D75112A07ABF293323B30D /* Bayes.modulemap */,
+				8A7023E546867F1E1D676EFDD7DC7336 /* Bayes.xcconfig */,
+				337B5C97CFE236B8FB9913951D5A4079 /* Bayes-dummy.m */,
+				676F4B7AE3E2E99DA62976D5EF6F783C /* Bayes-prefix.pch */,
+				AC8353740C7F065DDC42F35AD3C17540 /* Bayes-umbrella.h */,
+				14B647C4376A17161B8AF82521927DB4 /* Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Bayes";
 			sourceTree = "<group>";
 		};
-		A068383F7716DDC731166B6E13249A64 /* CHCSVParser */ = {
+		A0CB581122E9849E5A08EFEDAD1BD1AA /* KVNProgress */ = {
 			isa = PBXGroup;
 			children = (
-				F3DB427E437EAFB74B5DDAE17FCCD2E8 /* CHCSVParser.h */,
-				5FB5D7AF371D8F20F37CC6A1EFAFE9C9 /* CHCSVParser.m */,
-				14E0FCC8C5712BD673446F1DECBC2469 /* Support Files */,
+				A68564A2181A71A536342717C306A91A /* KVNProgress.h */,
+				0EC28FBA472BB5F7E847D3F72578691A /* KVNProgress.m */,
+				453F64428B78F11DE475E98B5AAB0B06 /* KVNProgressConfiguration.h */,
+				0A4C66CD0A30CDDFD4823689942CF4F1 /* KVNProgressConfiguration.m */,
+				BFF26AD3146A4687DFC545CCF6ED06FB /* UIColor+KVNContrast.h */,
+				BD3D6D468327A44DA64BD68A058AADF3 /* UIColor+KVNContrast.m */,
+				BCC527832E0E32B249A99080CB8064D1 /* UIImage+KVNEmpty.h */,
+				8AE19E88E657E9CAE650A8F9067EBB80 /* UIImage+KVNEmpty.m */,
+				58AE687B6E02B0486291D745FD9A40F5 /* UIImage+KVNImageEffects.h */,
+				485C947ADF3C18B362176D554E2E86A5 /* UIImage+KVNImageEffects.m */,
+				1366672D192DA6752A6D10CD3821DA3C /* Resources */,
+				FD91EBE7F12294D1C855960E706ECA8D /* Support Files */,
 			);
-			path = CHCSVParser;
+			path = KVNProgress;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		C7624EDA355B6EBBDF75552A48EEE81C /* Bayes */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				58EBA63B978175E76A1CDB887FE8FA0D /* Bayes.h */,
+				C71597C10476AEECBC5520010E7F5B47 /* BayesianClassifier.swift */,
+				7311BF5596ED0E9E0EF865C5CE895658 /* EventSpace.swift */,
+				BE291EF7D41A13FD6B2E71A7FFD3D5E9 /* HashableTouple.swift */,
+				78152EEB1D5ED867CC9729BA845737C3 /* IncrementingBag.swift */,
+				213F3B3EFE50C2DFFC35C02504F99F50 /* Math.swift */,
+				9854DD239CB26FD4504EB944B130739F /* Support Files */,
 			);
-			name = Frameworks;
+			path = Bayes;
 			sourceTree = "<group>";
 		};
 		C8E59B0E4767370E98DBD3BC88F92A07 /* Targets Support Files */ = {
@@ -248,6 +439,48 @@
 				93DA6B625B53B5A0BF6B35B5619E06FA /* Pods-NLP_Assignment3UITests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EEF40A01257478F3113304F01E7E2B3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B65A523EE5509D630A50A9C9291B0E05 /* Bayes.framework */,
+				2F028E7DE08E649D9F934C9B4DA9C7FE /* CHCSVParser.framework */,
+				C0594B67D30AE5E3314F2CCD5009B405 /* KVNProgress.framework */,
+				937703DD7C96C70D4C513D51DBC7B383 /* Pods_NLP_Assignment3.framework */,
+				C369CF9898A0C4314E47421DBAAE92B8 /* Pods_NLP_Assignment3Tests.framework */,
+				943F0046ADA26929CFFAC9B1434A10D0 /* Pods_NLP_Assignment3UITests.framework */,
+				12762BFA52C3EB823A5B47B3DB050EA4 /* YYModel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F82CBC6D939BC2D413A3B6A953B400B1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				61D71DFDE88840F171F2472F19249568 /* Info.plist */,
+				647E6F0454F84FA01F5DEB329371938F /* YYModel.modulemap */,
+				21C51E6E322ED79C98A1CC57DC052FEC /* YYModel.xcconfig */,
+				370B11906BC3D6BABF774F40EEC5E4E6 /* YYModel-dummy.m */,
+				75C03D9A2A156A65B134B478EA187076 /* YYModel-prefix.pch */,
+				D86D7CC56111BC0B638BAC2516EE0C3B /* YYModel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YYModel";
+			sourceTree = "<group>";
+		};
+		FD91EBE7F12294D1C855960E706ECA8D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3C2B36FD728C09C2168ABB097159CEF /* Info.plist */,
+				96B3EC82F00552C9ED2AA00B3A4862C9 /* KVNProgress.modulemap */,
+				C706ACCB6A15DD9E25B9D650866CA378 /* KVNProgress.xcconfig */,
+				690A8AF9E3CECCB8B3F3F7610C39532A /* KVNProgress-dummy.m */,
+				A989F7E465232041FE0060E4DEBD62DA /* KVNProgress-prefix.pch */,
+				4F777FA56386F8194FFABEFEAEAD8F2F /* KVNProgress-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KVNProgress";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,11 +495,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E13142E9E3064A563CE8EE3CF5A485C /* Headers */ = {
+		4828028C649B1D9F79426CC4AADF777D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A8D734167C301DB055307B8887263D /* Pods-NLP_Assignment3-umbrella.h in Headers */,
+				82E64159AFF200F6024944614B5E168C /* KVNProgress-umbrella.h in Headers */,
+				BD18BDED1CC9AD4AA4050786288C8D8C /* KVNProgress.h in Headers */,
+				066AEF6A1B987399C90F7B3AF53579F5 /* KVNProgressConfiguration.h in Headers */,
+				CE81C87BE66A0443B20EDA83A66BB3D4 /* UIColor+KVNContrast.h in Headers */,
+				116D3767A78FC0657E88B4CEDA4C3299 /* UIImage+KVNEmpty.h in Headers */,
+				B7AFD9C143865892B89249A5C69CD5B3 /* UIImage+KVNImageEffects.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		605EBDFEB46B9C4BCC8F2BA078BB1673 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39BEFDD19BB41824CE29C0B4A945A1F /* NSObject+YYModel.h in Headers */,
+				913D86CE2761D267DA89A5BF503D0C57 /* YYClassInfo.h in Headers */,
+				15760B6B45914AE37B7557626301020E /* YYModel-umbrella.h in Headers */,
+				E179B8F9D5A1FC8C5FCAEDC35993E5B9 /* YYModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +524,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				258082E7F88B3E8269CDFC19E3D46196 /* Pods-NLP_Assignment3Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AC09FEC3CBD430C092DA3D3551302EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91A99ECA622378E45E1396FC4DCF866 /* Bayes-umbrella.h in Headers */,
+				1F760552DFD341D1B4613C06A7F0B44A /* Bayes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9500047B4B06DC06E549EA75BB9F1DC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92999B44DA65C91562E9FD6C787698FE /* Pods-NLP_Assignment3-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,22 +555,60 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7921E2A78C56386B297BB1D8CE208C7B /* Pods-NLP_Assignment3 */ = {
+		0186EE20AB4D310515B8041966DB7AEB /* KVNProgress */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1068A606C006F795D08360FD5FF2A0C6 /* Build configuration list for PBXNativeTarget "Pods-NLP_Assignment3" */;
+			buildConfigurationList = EFF0DD996BED0F4F1E6537D660B86E1D /* Build configuration list for PBXNativeTarget "KVNProgress" */;
 			buildPhases = (
-				A5E007FB7A46E9C74AD5A88804962613 /* Sources */,
-				2636A7C89C97C718BA209C7DF3954400 /* Frameworks */,
-				2E13142E9E3064A563CE8EE3CF5A485C /* Headers */,
+				577C1C5E2253B419B3D508C9A34E4663 /* Sources */,
+				DA0D097C530FB413E08EAE35FB17EB7A /* Frameworks */,
+				4828028C649B1D9F79426CC4AADF777D /* Headers */,
+				FA3F98E8768602505269ACF333B7826A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				381DF8DE0112A04AB418AB04ABBFDF5B /* PBXTargetDependency */,
+			);
+			name = KVNProgress;
+			productName = KVNProgress;
+			productReference = C0594B67D30AE5E3314F2CCD5009B405 /* KVNProgress.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		70145D389C2EFCB86F87E070018CBA28 /* YYModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 377CAAE8AAA2D8FEC45C8AEECBA506A5 /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildPhases = (
+				DBD9530EAC4EF53760D2AB65AF339917 /* Sources */,
+				8389364F1F6E147C0B5B7C615D8C2126 /* Frameworks */,
+				605EBDFEB46B9C4BCC8F2BA078BB1673 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYModel;
+			productName = YYModel;
+			productReference = 12762BFA52C3EB823A5B47B3DB050EA4 /* YYModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E96B9A9EE5AA60B80455E23ADE29306 /* Pods-NLP_Assignment3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77CBA7C0446D47FB8F96ABE75D6BA70C /* Build configuration list for PBXNativeTarget "Pods-NLP_Assignment3" */;
+			buildPhases = (
+				2F0C379B18CB47D90CC5558C3D76FE1F /* Sources */,
+				C426DE9E2C1305B5C8B8554234E0557E /* Frameworks */,
+				9500047B4B06DC06E549EA75BB9F1DC6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D796E38A4D2DADBF052F619BCF126C9 /* PBXTargetDependency */,
+				80C9996FBA7DF054032E26150A181068 /* PBXTargetDependency */,
+				197B826A64BE9CD94DBC54F47162C471 /* PBXTargetDependency */,
+				E41D10F4260C632FCB19167494DB47DC /* PBXTargetDependency */,
 			);
 			name = "Pods-NLP_Assignment3";
 			productName = "Pods-NLP_Assignment3";
-			productReference = DC7BAFDF1A1724C5C5A526659ECBF0E6 /* Pods_NLP_Assignment3.framework */;
+			productReference = 937703DD7C96C70D4C513D51DBC7B383 /* Pods_NLP_Assignment3.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C228B63B4AD768BDDB1E159B7D6B318D /* Pods-NLP_Assignment3UITests */ = {
@@ -321,7 +625,24 @@
 			);
 			name = "Pods-NLP_Assignment3UITests";
 			productName = "Pods-NLP_Assignment3UITests";
-			productReference = 0A117C869B5DFF22EB5ACFEADA383297 /* Pods_NLP_Assignment3UITests.framework */;
+			productReference = 943F0046ADA26929CFFAC9B1434A10D0 /* Pods_NLP_Assignment3UITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD5EBA10AB80EF44C24F9178506A1F2C /* Bayes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6055041BD0C08321F5AD0029F81560BC /* Build configuration list for PBXNativeTarget "Bayes" */;
+			buildPhases = (
+				B1CC1285F7F0C9B348A49CC18903618B /* Sources */,
+				AB49D3118A5ADB723BD43594A596A905 /* Frameworks */,
+				7AC09FEC3CBD430C092DA3D3551302EB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bayes;
+			productName = Bayes;
+			productReference = B65A523EE5509D630A50A9C9291B0E05 /* Bayes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D4A49C09A765C9C8A3B84093365D3306 /* Pods-NLP_Assignment3Tests */ = {
@@ -338,7 +659,7 @@
 			);
 			name = "Pods-NLP_Assignment3Tests";
 			productName = "Pods-NLP_Assignment3Tests";
-			productReference = 95FF0414E62C1A85FF0E42620EB0D240 /* Pods_NLP_Assignment3Tests.framework */;
+			productReference = C369CF9898A0C4314E47421DBAAE92B8 /* Pods_NLP_Assignment3Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E774219A5AC0D52C597199EFC570F3CF /* CHCSVParser */ = {
@@ -355,7 +676,7 @@
 			);
 			name = CHCSVParser;
 			productName = CHCSVParser;
-			productReference = 87F574CCBCAFFBD62D13BE3C7E8C45F7 /* CHCSVParser.framework */;
+			productReference = 2F028E7DE08E649D9F934C9B4DA9C7FE /* CHCSVParser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -375,17 +696,31 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A028CB911AC490CF72DDB7AB8419B2CC /* Products */;
+			productRefGroup = EEF40A01257478F3113304F01E7E2B3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				CD5EBA10AB80EF44C24F9178506A1F2C /* Bayes */,
 				E774219A5AC0D52C597199EFC570F3CF /* CHCSVParser */,
-				7921E2A78C56386B297BB1D8CE208C7B /* Pods-NLP_Assignment3 */,
+				0186EE20AB4D310515B8041966DB7AEB /* KVNProgress */,
+				7E96B9A9EE5AA60B80455E23ADE29306 /* Pods-NLP_Assignment3 */,
 				D4A49C09A765C9C8A3B84093365D3306 /* Pods-NLP_Assignment3Tests */,
 				C228B63B4AD768BDDB1E159B7D6B318D /* Pods-NLP_Assignment3UITests */,
+				70145D389C2EFCB86F87E070018CBA28 /* YYModel */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA3F98E8768602505269ACF333B7826A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADFF878CB7140130210C8DB8197E291 /* KVNProgressView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17D610459EF7637F9AE9992F50B666C4 /* Sources */ = {
@@ -394,6 +729,27 @@
 			files = (
 				8D56AC84EF4AE87BA1B7FE3FA2ECE27B /* CHCSVParser-dummy.m in Sources */,
 				9005EF7100D43C935D41ACA2D982A739 /* CHCSVParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0C379B18CB47D90CC5558C3D76FE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A72EE862E538AB6939FA043A26F416 /* Pods-NLP_Assignment3-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577C1C5E2253B419B3D508C9A34E4663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF2B055A55B65795E721D4A77BB8D01 /* KVNProgress-dummy.m in Sources */,
+				D4E977BCE4ED1AF24E7E122FC462E42B /* KVNProgress.m in Sources */,
+				0EE9D85E3C609CF07EE82AD2AAC58BAD /* KVNProgressConfiguration.m in Sources */,
+				B0A973C6184C25929F3C56F78BC651E4 /* UIColor+KVNContrast.m in Sources */,
+				706DD00E534236F25B5E1368B594BCC3 /* UIImage+KVNEmpty.m in Sources */,
+				B477BDCD9B1D06725C07B4448903D7F3 /* UIImage+KVNImageEffects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,26 +769,117 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5E007FB7A46E9C74AD5A88804962613 /* Sources */ = {
+		B1CC1285F7F0C9B348A49CC18903618B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A495056E4EF36A511AEC04F7C907AD1 /* Pods-NLP_Assignment3-dummy.m in Sources */,
+				631BC2D630A78B593FCDE9DD1D0B6A46 /* Bayes-dummy.m in Sources */,
+				241D1B117A56F074E62C3CD50D956865 /* BayesianClassifier.swift in Sources */,
+				B5F53FA074E62467B81549FC8C12FADB /* EventSpace.swift in Sources */,
+				84D644530C86CA126CE50194AC5DBE08 /* HashableTouple.swift in Sources */,
+				047082ACB13CA8B7A1ECE9C771BC3975 /* IncrementingBag.swift in Sources */,
+				FD430156D82DEA5E06E2B3852C66BEBA /* Math.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBD9530EAC4EF53760D2AB65AF339917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88C09CA12A6481AD44B3331732B0035 /* NSObject+YYModel.m in Sources */,
+				02AB1316D90DB4941FDD5C0E8A11E5E2 /* YYClassInfo.m in Sources */,
+				9C2A80372A56186C35002DE726661C4B /* YYModel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		381DF8DE0112A04AB418AB04ABBFDF5B /* PBXTargetDependency */ = {
+		197B826A64BE9CD94DBC54F47162C471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVNProgress;
+			target = 0186EE20AB4D310515B8041966DB7AEB /* KVNProgress */;
+			targetProxy = 71E7FAEB9732239400E510BC99ACA86E /* PBXContainerItemProxy */;
+		};
+		6D796E38A4D2DADBF052F619BCF126C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bayes;
+			target = CD5EBA10AB80EF44C24F9178506A1F2C /* Bayes */;
+			targetProxy = 7FB093C9BDD3AE526EF7BDF9F560EC41 /* PBXContainerItemProxy */;
+		};
+		80C9996FBA7DF054032E26150A181068 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CHCSVParser;
 			target = E774219A5AC0D52C597199EFC570F3CF /* CHCSVParser */;
-			targetProxy = F39A7304149B30D29E5A10FA2CE004A6 /* PBXContainerItemProxy */;
+			targetProxy = A1FD32382EBB043CA642D367F0951DF9 /* PBXContainerItemProxy */;
+		};
+		E41D10F4260C632FCB19167494DB47DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = 70145D389C2EFCB86F87E070018CBA28 /* YYModel */;
+			targetProxy = 9B2652DA5EFB8E1B03E73146DA923C83 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		22246997CFF307F51232009C4EB27DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7023E546867F1E1D676EFDD7DC7336 /* Bayes.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bayes/Bayes-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bayes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bayes/Bayes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Bayes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2CE12D3518C14A648205D617C4227B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C51E6E322ED79C98A1CC57DC052FEC /* YYModel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		31139605CFB86DF6BA8D132C03763F15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5324342C0B5D43897A7E0FD5B9C33B0D /* Pods-NLP_Assignment3UITests.debug.xcconfig */;
@@ -541,6 +988,69 @@
 			};
 			name = Debug;
 		};
+		4E52D2685450A853A533502615F15B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF75FE609D6E0CD830C39A6067E90875 /* Pods-NLP_Assignment3.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NLP_Assignment3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NLP_Assignment3/Pods-NLP_Assignment3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NLP_Assignment3;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D1C193D63D2928D38DFA6D65E8FAFAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C706ACCB6A15DD9E25B9D650866CA378 /* KVNProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KVNProgress/KVNProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVNProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KVNProgress/KVNProgress.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KVNProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -581,7 +1091,7 @@
 		};
 		B9F4C3DBE29BF7835C72962A24DC14B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD40FDFD0B9818959CAE95ACE0C41379 /* CHCSVParser.xcconfig */;
+			baseConfigurationReference = 8FCF74EA000D0B985C17F4CCC136E173 /* CHCSVParser.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -643,7 +1153,7 @@
 		};
 		C4CD6DC01F5B961C237B6A8401E31084 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD40FDFD0B9818959CAE95ACE0C41379 /* CHCSVParser.xcconfig */;
+			baseConfigurationReference = 8FCF74EA000D0B985C17F4CCC136E173 /* CHCSVParser.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -670,42 +1180,9 @@
 			};
 			name = Release;
 		};
-		D903DBF90D6855F7469F64C628DC67ED /* Debug */ = {
+		EAECFD90F25DB84284B5342F5B7B1AE7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF75FE609D6E0CD830C39A6067E90875 /* Pods-NLP_Assignment3.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NLP_Assignment3/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NLP_Assignment3/Pods-NLP_Assignment3.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NLP_Assignment3;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DB551B10B66DD67A5FD6555A307546A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F21CFDF5F7AC957397570B7E673F190 /* Pods-NLP_Assignment3.release.xcconfig */;
+			baseConfigurationReference = C706ACCB6A15DD9E25B9D650866CA378 /* KVNProgress.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -716,18 +1193,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NLP_Assignment3/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KVNProgress/KVNProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVNProgress/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NLP_Assignment3/Pods-NLP_Assignment3.modulemap";
+				MODULEMAP_FILE = "Target Support Files/KVNProgress/KVNProgress.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NLP_Assignment3;
+				PRODUCT_NAME = KVNProgress;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -769,23 +1242,133 @@
 			};
 			name = Release;
 		};
+		ED581E8C908E8DB65B6CC0438F994C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7023E546867F1E1D676EFDD7DC7336 /* Bayes.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bayes/Bayes-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bayes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bayes/Bayes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Bayes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF9ACBB9C1E56998B99D2A8699ADD3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C51E6E322ED79C98A1CC57DC052FEC /* YYModel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F958FCF4A2B25296E9459B95972A7120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F21CFDF5F7AC957397570B7E673F190 /* Pods-NLP_Assignment3.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NLP_Assignment3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NLP_Assignment3/Pods-NLP_Assignment3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NLP_Assignment3;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1068A606C006F795D08360FD5FF2A0C6 /* Build configuration list for PBXNativeTarget "Pods-NLP_Assignment3" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D903DBF90D6855F7469F64C628DC67ED /* Debug */,
-				DB551B10B66DD67A5FD6555A307546A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47BEF9D903506B003EA5C2B249729489 /* Debug */,
 				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		377CAAE8AAA2D8FEC45C8AEECBA506A5 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9ACBB9C1E56998B99D2A8699ADD3EC /* Debug */,
+				2CE12D3518C14A648205D617C4227B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6055041BD0C08321F5AD0029F81560BC /* Build configuration list for PBXNativeTarget "Bayes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED581E8C908E8DB65B6CC0438F994C74 /* Debug */,
+				22246997CFF307F51232009C4EB27DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77CBA7C0446D47FB8F96ABE75D6BA70C /* Build configuration list for PBXNativeTarget "Pods-NLP_Assignment3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E52D2685450A853A533502615F15B0C /* Debug */,
+				F958FCF4A2B25296E9459B95972A7120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -813,6 +1396,15 @@
 			buildConfigurations = (
 				31139605CFB86DF6BA8D132C03763F15 /* Debug */,
 				EB233CC256A247B4B339ED4867F43C1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFF0DD996BED0F4F1E6537D660B86E1D /* Build configuration list for PBXNativeTarget "KVNProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D1C193D63D2928D38DFA6D65E8FAFAF /* Debug */,
+				EAECFD90F25DB84284B5342F5B7B1AE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

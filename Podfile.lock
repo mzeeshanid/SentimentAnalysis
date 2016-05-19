@@ -1,12 +1,30 @@
 PODS:
+  - Bayes (0.0.1)
   - CHCSVParser (2.1.0)
+  - KVNProgress (2.2.4)
+  - YYModel (1.0.3)
 
 DEPENDENCIES:
+  - Bayes (from `https://github.com/fcanas/Bayes.git`)
   - CHCSVParser (~> 2.1.0)
+  - KVNProgress (~> 2.2.4)
+  - YYModel (~> 1.0.3)
+
+EXTERNAL SOURCES:
+  Bayes:
+    :git: https://github.com/fcanas/Bayes.git
+
+CHECKOUT OPTIONS:
+  Bayes:
+    :commit: d3e359502b7079ceae6b26a27e6c9fed8955a1f3
+    :git: https://github.com/fcanas/Bayes.git
 
 SPEC CHECKSUMS:
+  Bayes: 7ca5d78637f3366c28adbe04f11e8d6d6847f801
   CHCSVParser: 3bcc7bdb72111a31222e95d57eacceefe4e537e8
+  KVNProgress: 541edcea5a1fef592aceac8d791a410d38cb499d
+  YYModel: 63142c2f07c5c8c9d1c261689cf3827ea6ab2886
 
-PODFILE CHECKSUM: 5f424bbe59a73692d8a7c3666cc8b598eea86ee3
+PODFILE CHECKSUM: 1a8c6bf90a188090036fcc008641215aca84d792
 
 COCOAPODS: 1.0.0

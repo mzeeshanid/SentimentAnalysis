@@ -1,13 +1,12 @@
 //
-//  NSString+StripHtml.m
+//  NSString+Additions.m
 //  NLP_Assignment3
 //
-//  Created by Hamid Ismail on 18/05/2016.
+//  Created by Hamid Ismail on 19/05/2016.
 //  Copyright © 2016 ThatClose. All rights reserved.
 //
-//Source: http://www.codeilove.com/2011/09/ios-dev-strip-html-tags-from-nsstring.html
 
-#import "NSString+StripHtml.h"
+#import "NSString+Additions.h"
 
 @interface NSString_stripHtml_XMLParsee : NSObject<NSXMLParserDelegate> {
     
@@ -36,7 +35,7 @@
 }
 @end
 
-@implementation NSString (stripHtml)
+@implementation NSString (Additions)
 
 - (NSString*)stripHtml {
     // take this string obj and wrap it in a root element to ensure only a single root element exists
@@ -54,10 +53,12 @@
     parser.delegate = parsee;
     [parser parse];
     
-    NSError * error = nil;
-    if((error = [parser parserError])) {
-        NSLog(@"This is a warning only. There was an error parsing the string to strip HTML. This error may be because the string did not contain valid XML, however the result will likely have been decoded correctly anyway.: %@", error);
-    }
+    /*
+     NSError * error = nil;
+     if((error = [parser parserError])) {
+     NSLog(@"This is a warning only. There was an error parsing the string to strip HTML. This error may be because the string did not contain valid XML, however the result will likely have been decoded correctly anyway.: %@", error);
+     }
+     */
     
     // any chars found while parsing are the stripped content
     NSString* strippedString = [parsee getCharsFound];
@@ -65,4 +66,21 @@
     // get the raw text out of the parsee after parsing, and return it
     return strippedString;
 }
+
+- (void)getTagForWordWithCompletion:(void (^)(NSString *__nullable tag, NSString *__nullable currentEntity, NSRange tokenRange, NSRange sentenceRange))completion {
+    NSString *word = self;
+    NSRange stringRange = NSMakeRange(0, word.length);
+    NSDictionary* languageMap = @{@"Latn" : @[@"en"]};
+    [word enumerateLinguisticTagsInRange:stringRange
+                                  scheme:NSLinguisticTagSchemeLemma
+                                 options:NSLinguisticTaggerOmitWhitespace
+                             orthography:[NSOrthography orthographyWithDominantScript:@"Latn" languageMap:languageMap]
+                              usingBlock:^(NSString *tag, NSRange tokenRange, NSRange sentenceRange, BOOL *stop) {
+                                  // Log info to console for debugging purposes
+                                  NSString *currentEntity = [word substringWithRange:tokenRange];
+                                  completion(tag, currentEntity, tokenRange, sentenceRange);
+                              }];
+}
 @end
+
+
