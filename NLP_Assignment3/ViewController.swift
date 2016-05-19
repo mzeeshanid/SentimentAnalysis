@@ -19,9 +19,14 @@ class ViewController: UIViewController {
     var postiveClassName = "positive"
     var negativeClassName = "negative"
     
+    var reviews: NSArray = NSArray()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        UIApplication.sharedApplication().idleTimerDisabled = true
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +45,10 @@ class ViewController: UIViewController {
     @IBAction func trainButtonTapped(sender: UIButton) {
         
         KVNProgress.showWithStatus("Parsing training data...")
+        self.performSelector(#selector(startTheAlgorithm), withObject: nil, afterDelay: 0.3)
+    }
+    
+    func startTheAlgorithm() {
         guard let fileURL = NSBundle.mainBundle().URLForResource("labeledTrainData", withExtension: "tsv") else {
             fatalError("Unable to locate csv file")
         }
@@ -59,14 +68,27 @@ class ViewController: UIViewController {
         let delimiter = "\t".utf16.first!
         let options: CHCSVParserOptions = [.SanitizesFields, .TrimsWhitespace, .UsesFirstLineAsKeys, .RecognizesBackslashesAsEscapes]
         do {
-            let reviews = try NSArray.init(contentsOfDelimitedURL: fileURL, options: options, delimiter: delimiter, error: ())
+            reviews = try NSArray.init(contentsOfDelimitedURL: fileURL, options: options, delimiter: delimiter, error: ())
             
             
             KVNProgress.showWithStatus("Sanitizing training data...");
             
-//            var sanitizedReviews: Array<(id: Int, sentiment: Bool, review: String)> = Array()
+//            self.classifyDataUsingBaysian(0)
             
-            let countedSet: NSCountedSet = NSCountedSet()
+            reviews.enumerateObjectsUsingBlock({ (reviewDict: AnyObject, i: Int, stop: UnsafeMutablePointer<ObjCBool>) in
+                let review = reviewDict as! [String : AnyObject]
+                let sanitizedReview = (review["review"] as! String).sanitize(stopWords: self.stopWords!)
+                
+                let features = sanitizedReview.componentsSeparatedByString(" ")
+                let category = review["sentiment"]!.boolValue == true ? self.postiveClassName : self.negativeClassName
+                self.eventSpace.observe(category, features: features)
+                
+                if (i+1)%500 == 0 {
+                    KVNProgress.showWithStatus("Trained \(i+1, self.reviews.count, "reviews outof ", self.reviews.count)");
+                }
+            })
+            
+            /*
             for (i, reviewDict) in reviews.enumerate() {
                 let review = reviewDict as! [String : AnyObject]
                 let sanitizedReview = (review["review"] as! String).sanitize(stopWords: stopWords!)
@@ -76,27 +98,36 @@ class ViewController: UIViewController {
                 eventSpace.observe(category, features: features)
                 
                 if (i+1)%500 == 0 {
-                    KVNProgress.showWithStatus("Trained \(i+1, reviews.count, "reviews outof ", countedSet.allObjects.count)");
+                    KVNProgress.showWithStatus("Trained \(i+1, reviews.count, "reviews outof ", reviews.count)");
                 }
-                
-                /*
-                sanitizedReviews.append((review["id"]!.integerValue, review["sentiment"]!.boolValue, sanitizedReview))
-                
-                let range = sanitizedReview.startIndex..<sanitizedReview.endIndex
-                sanitizedReview.enumerateSubstringsInRange(range, options: .ByWords, { (substring, substringRange, enclosingRange, inout stop: Bool) in
-                    countedSet.addObject(substring!)
-                })
-                */
             }
+            */
+            
             KVNProgress.dismiss()
             KVNProgress.showSuccessWithStatus("Training completed")
-            
-//            debugPrint("first diction: \(sanitizedReviews.first!, sanitizedReviews.count)")
+
         } catch let error as NSError {
             debugPrint("error while parsing csv file: " + error.localizedDescription)
         }
     }
     
+    /*
+    func classifyDataUsingBaysian(index: Int) {
+        if index < reviews.count {
+            
+            let reviewDict = reviews[index]
+            let review = reviewDict as! [String : AnyObject]
+            let sanitizedReview = (review["review"] as! String).sanitize(stopWords: stopWords!)
+            
+            let features = sanitizedReview.componentsSeparatedByString(" ")
+            let category = review["sentiment"]!.boolValue == true ? postiveClassName : negativeClassName
+            eventSpace.observe(category, features: features)
+            
+            let newIndex = index + 1
+            self.classifyDataUsingBaysian(newIndex)
+        }
+    }
+    */
 }
 
 extension String {

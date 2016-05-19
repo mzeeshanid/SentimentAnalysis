@@ -25,6 +25,13 @@ class PredictViewController: UIViewController {
     
     @IBAction func predictButtonTapped(sender: UIButton) {
         
+        guard let _ = textField.text where textField.text?.characters.count > 0 else {
+            let alertController = UIAlertController(title: "Enter Some Text", message: "Enter some text to get prediction (Positive or Negative)", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+            return
+        }
+        
         let classifier = BayesianClassifier(eventSpace: eventSpace)
         
         let sanitizedReview = textField.text!.sanitize(stopWords: stopWords!)
