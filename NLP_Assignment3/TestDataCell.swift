@@ -14,7 +14,7 @@ class TestDataCell: UITableViewCell {
     func configureCell(indexPath: NSIndexPath, testData: TestDataModel) {
         lblReview.text = testData.review
         
-        if testData.predictedClass == testData.predictedClass {
+        if testData.predictedClass != testData.actualClass {
             self.contentView.backgroundColor = UIColor.redColor().colorWithAlphaComponent(0.5)
         } else {
             self.contentView.backgroundColor = UIColor.whiteColor()
