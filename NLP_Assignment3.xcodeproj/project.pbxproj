@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A94EF2B7A11AE57718F5FBCC /* Pods_NLP_Assignment3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CDE46767C834946955B426 /* Pods_NLP_Assignment3UITests.framework */; };
 		B245275E1E1A86F7B6A1D8F4 /* Pods_NLP_Assignment3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B68135FEC3B5C3F887CF72 /* Pods_NLP_Assignment3.framework */; };
+		B3A2B3041CF37FED00893EDA /* TestDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A2B3031CF37FED00893EDA /* TestDataTableViewController.swift */; };
+		B3A2B3061CF3808D00893EDA /* testData.tsv in Resources */ = {isa = PBXBuildFile; fileRef = B3A2B3051CF3808D00893EDA /* testData.tsv */; };
+		B3A2B3081CF3825C00893EDA /* TestDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A2B3071CF3825C00893EDA /* TestDataCell.swift */; };
+		B3A2B30A1CF3827400893EDA /* TestDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A2B3091CF3827400893EDA /* TestDataModel.swift */; };
 		DA6B68711CED9A0900307483 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6B68701CED9A0900307483 /* NSString+Additions.m */; };
 		DA6B68801CEDC16300307483 /* PredictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B687F1CEDC16300307483 /* PredictViewController.swift */; };
 		DA96D0B51CEC528E006F1909 /* stopwords.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA96D0B41CEC528E006F1909 /* stopwords.txt */; };
@@ -48,6 +52,10 @@
 		5CE93E173CE6BF1589ADBAC1 /* Pods-NLP_Assignment3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLP_Assignment3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NLP_Assignment3/Pods-NLP_Assignment3.debug.xcconfig"; sourceTree = "<group>"; };
 		8148B08870CF649C265D8B37 /* Pods_NLP_Assignment3Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NLP_Assignment3Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE00C695EBB04C5CC61B6244 /* Pods-NLP_Assignment3UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLP_Assignment3UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NLP_Assignment3UITests/Pods-NLP_Assignment3UITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3A2B3031CF37FED00893EDA /* TestDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataTableViewController.swift; sourceTree = "<group>"; };
+		B3A2B3051CF3808D00893EDA /* testData.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testData.tsv; sourceTree = "<group>"; };
+		B3A2B3071CF3825C00893EDA /* TestDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataCell.swift; sourceTree = "<group>"; };
+		B3A2B3091CF3827400893EDA /* TestDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataModel.swift; sourceTree = "<group>"; };
 		D7573C11448D91D168F84C23 /* Pods-NLP_Assignment3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLP_Assignment3Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NLP_Assignment3Tests/Pods-NLP_Assignment3Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DA6B686F1CED9A0900307483 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		DA6B68701CED9A0900307483 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
@@ -158,6 +166,9 @@
 				DAE517521CEB2D79007565EC /* NLP_Assignment3-Bridging-Header.h */,
 				DA6B686F1CED9A0900307483 /* NSString+Additions.h */,
 				DA6B68701CED9A0900307483 /* NSString+Additions.m */,
+				B3A2B3031CF37FED00893EDA /* TestDataTableViewController.swift */,
+				B3A2B3071CF3825C00893EDA /* TestDataCell.swift */,
+				B3A2B3091CF3827400893EDA /* TestDataModel.swift */,
 			);
 			path = NLP_Assignment3;
 			sourceTree = "<group>";
@@ -183,6 +194,7 @@
 		DAE5174D1CEB2646007565EC /* TrainingDataSet */ = {
 			isa = PBXGroup;
 			children = (
+				B3A2B3051CF3808D00893EDA /* testData.tsv */,
 				DA96D0B41CEC528E006F1909 /* stopwords.txt */,
 				DAE517501CEB2972007565EC /* labeledTrainData.tsv */,
 			);
@@ -306,6 +318,7 @@
 				DAE5172A1CEB25EC007565EC /* LaunchScreen.storyboard in Resources */,
 				DAE517271CEB25EC007565EC /* Assets.xcassets in Resources */,
 				DAE517251CEB25EC007565EC /* Main.storyboard in Resources */,
+				B3A2B3061CF3808D00893EDA /* testData.tsv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,8 +466,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3A2B30A1CF3827400893EDA /* TestDataModel.swift in Sources */,
 				DA6B68801CEDC16300307483 /* PredictViewController.swift in Sources */,
+				B3A2B3041CF37FED00893EDA /* TestDataTableViewController.swift in Sources */,
 				DAE517221CEB25EC007565EC /* ViewController.swift in Sources */,
+				B3A2B3081CF3825C00893EDA /* TestDataCell.swift in Sources */,
 				DA6B68711CED9A0900307483 /* NSString+Additions.m in Sources */,
 				DAE517201CEB25EC007565EC /* AppDelegate.swift in Sources */,
 			);

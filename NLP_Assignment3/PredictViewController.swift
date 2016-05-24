@@ -17,6 +17,7 @@ class PredictViewController: UIViewController {
     var eventSpace: EventSpace<String, String>!
     var stopWords: Set<String>?
     
+    
     //MARK: My IBActions
     
     @IBAction func textFieldDidEndOnExit(sender: UITextField) {

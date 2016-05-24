@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     
     var reviews: NSArray = NSArray()
     
+    var testData: [TestDataModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -73,8 +75,7 @@ class ViewController: UIViewController {
             
             KVNProgress.showWithStatus("Sanitizing training data...");
             
-//            self.classifyDataUsingBaysian(0)
-            
+            /*
             reviews.enumerateObjectsUsingBlock({ (reviewDict: AnyObject, i: Int, stop: UnsafeMutablePointer<ObjCBool>) in
                 let review = reviewDict as! [String : AnyObject]
                 let sanitizedReview = (review["review"] as! String).sanitize(stopWords: self.stopWords!)
@@ -87,8 +88,8 @@ class ViewController: UIViewController {
                     KVNProgress.showWithStatus("Trained \(i+1, self.reviews.count, "reviews outof ", self.reviews.count)");
                 }
             })
+            */
             
-            /*
             for (i, reviewDict) in reviews.enumerate() {
                 let review = reviewDict as! [String : AnyObject]
                 let sanitizedReview = (review["review"] as! String).sanitize(stopWords: stopWords!)
@@ -97,15 +98,50 @@ class ViewController: UIViewController {
                 let category = review["sentiment"]!.boolValue == true ? postiveClassName : negativeClassName
                 eventSpace.observe(category, features: features)
                 
-                if (i+1)%500 == 0 {
-                    KVNProgress.showWithStatus("Trained \(i+1, reviews.count, "reviews outof ", reviews.count)");
-                }
+//                if (i+1)%500 == 0 {
+//                    KVNProgress.showWithStatus("Trained \(i+1, reviews.count, "reviews outof ", reviews.count)");
+//                }
             }
-            */
+            
+            predictSentimentsForTestDataset()
             
             KVNProgress.dismiss()
             KVNProgress.showSuccessWithStatus("Training completed")
 
+        } catch let error as NSError {
+            debugPrint("error while parsing csv file: " + error.localizedDescription)
+        }
+    }
+    
+    func predictSentimentsForTestDataset() {
+        testData.removeAll()
+        guard let fileURL = NSBundle.mainBundle().URLForResource("testData", withExtension: "tsv") else {
+            fatalError("Unable to locate csv file")
+        }
+        
+        var testArray: NSArray = NSArray()
+        let delimiter = "\t".utf16.first!
+        let options: CHCSVParserOptions = [.SanitizesFields, .TrimsWhitespace, .UsesFirstLineAsKeys, .RecognizesBackslashesAsEscapes]
+        do {
+            testArray = try NSArray.init(contentsOfDelimitedURL: fileURL, options: options, delimiter: delimiter, error: ())
+            
+            let classifier = BayesianClassifier(eventSpace: eventSpace)
+            
+            for reviewDict in testArray {
+                let review = reviewDict as! [String : AnyObject]
+                let originalReview = review["review"] as! String
+                let sanitizedReview = originalReview.sanitize(stopWords: stopWords!)
+                
+                let features = sanitizedReview.componentsSeparatedByString(" ")
+                
+                let className: String = classifier.classify(features)!
+                
+                let category = review["sentiment"]!.boolValue == true ? postiveClassName : negativeClassName
+                let testDataModel = TestDataModel.init(review: originalReview, actualClass: category, predictedClass: className)
+                testData.append(testDataModel)
+                
+            }
+            
         } catch let error as NSError {
             debugPrint("error while parsing csv file: " + error.localizedDescription)
         }
@@ -128,6 +164,12 @@ class ViewController: UIViewController {
         }
     }
     */
+    
+    @IBAction func testDataButtonTapped(sender: UIButton) {
+        let testDataController = storyboard?.instantiateViewControllerWithIdentifier("TestDataTableViewController") as! TestDataTableViewController
+        testDataController.testData = testData
+        navigationController?.pushViewController(testDataController, animated: true)
+    }
 }
 
 extension String {
